@@ -36,7 +36,7 @@ contract("IaroToken", (accounts) => {
     assert.equal(balanceAfterBurn, 100);
   });
 
-  it("user should not be able to mint tokens", async () => {
+  it("User should not be able to mint tokens", async () => {
     // Attempting to mint as a user 
     await truffleAssert.reverts(
       instance.mint(1337,{from: userAccount1}),
